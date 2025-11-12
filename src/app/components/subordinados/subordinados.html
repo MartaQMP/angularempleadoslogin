@@ -1,0 +1,21 @@
+<div id="div1">
+    <h1 id="titulo">Subordinados</h1>
+    @if (subordinados) {
+    <table class="table table-striped">
+        <tr>
+            <th>Apellido</th>
+            <th>Oficio</th>
+            <th>Salario</th>
+        </tr>
+        <tbody>
+            @for(sub of subordinados; track sub){
+            <tr>
+                <td>{{ sub.apellido }}</td>
+                <td>{{ sub.oficio }}</td>
+                <td>{{ sub.salario }}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    }
+</div>

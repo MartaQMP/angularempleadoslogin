@@ -1,0 +1,12 @@
+<div id="div1">
+    <h1 id="titulo">Login</h1>
+    <form #form="ngForm" style="width: 50%; margin: auto;">
+        <label class="form-label">Username:</label>
+        <input class="form-control" name="username" #username/>
+        <label class="form-label">Password:</label>
+        <input class="form-control" name="password" #password/>
+        <br/>
+        <button class="btn btn-secondary" (click)="hacerLogin()" style="margin-right: 5%;">Iniciar Sesion</button>
+        <button class="btn btn-secondary" (click)="cerrarLogin()">Cerrar Sesion</button>
+    </form>
+</div>
